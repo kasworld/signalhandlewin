@@ -27,7 +27,7 @@ var (
 
 func AddArgs() {
 	signalhandle_ArgAdded = true
-	signalhandle_service = flag.String("service", "start", "start,stop,restart,forcestart,logreopen")
+	signalhandle_service = flag.String("service", "start", "start,stop,restart,forcestart")
 }
 
 func StartByArgs(svr ServiceI) error {
