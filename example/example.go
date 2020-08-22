@@ -54,7 +54,7 @@ func (ws *SignalTestServer) GetServiceLockFilename() string {
 	return filename
 }
 
-func (sts *SignalTestServer) GetLogger() signalhandlewin.LoggerI {
+func (sts *SignalTestServer) GetLogger() interface{} {
 	return basiclog.GlobalLogger
 }
 
